@@ -11,6 +11,7 @@
 		AD5C3BB0288576C800A15184 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD5C3BAD288576C800A15184 /* Poppins-Bold.ttf */; };
 		AD5C3BB1288576C800A15184 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD5C3BAE288576C800A15184 /* Inter-SemiBold.ttf */; };
 		AD5C3BB428857D1200A15184 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C3BB328857D1200A15184 /* CustomFont.swift */; };
+		AD5C3BB62885942700A15184 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C3BB52885942700A15184 /* SignInView.swift */; };
 		ADDAF1102881ED9400EA4DB1 /* AnimatedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF10F2881ED9400EA4DB1 /* AnimatedApp.swift */; };
 		ADDAF1122881ED9400EA4DB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF1112881ED9400EA4DB1 /* ContentView.swift */; };
 		ADDAF1142881ED9500EA4DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADDAF1132881ED9500EA4DB1 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		AD5C3BAE288576C800A15184 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		AD5C3BB22885771B00A15184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AD5C3BB328857D1200A15184 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		AD5C3BB52885942700A15184 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		ADDAF10C2881ED9400EA4DB1 /* Animated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animated.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDAF10F2881ED9400EA4DB1 /* AnimatedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedApp.swift; sourceTree = "<group>"; };
 		ADDAF1112881ED9400EA4DB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				ADDAF10F2881ED9400EA4DB1 /* AnimatedApp.swift */,
 				ADDAF1112881ED9400EA4DB1 /* ContentView.swift */,
 				ADDAF12F2881F08000EA4DB1 /* OnboardingView.swift */,
+				AD5C3BB52885942700A15184 /* SignInView.swift */,
 				AD5C3BB328857D1200A15184 /* CustomFont.swift */,
 				ADDAF1132881ED9500EA4DB1 /* Assets.xcassets */,
 				AD5C3BAB288576C800A15184 /* Fonts */,
@@ -213,6 +216,7 @@
 				AD5C3BB428857D1200A15184 /* CustomFont.swift in Sources */,
 				ADDAF1122881ED9400EA4DB1 /* ContentView.swift in Sources */,
 				ADDAF1102881ED9400EA4DB1 /* AnimatedApp.swift in Sources */,
+				AD5C3BB62885942700A15184 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
