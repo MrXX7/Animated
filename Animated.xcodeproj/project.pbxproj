@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD5C3BAF288576C800A15184 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD5C3BAC288576C800A15184 /* Inter-Regular.ttf */; };
+		AD5C3BB0288576C800A15184 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD5C3BAD288576C800A15184 /* Poppins-Bold.ttf */; };
+		AD5C3BB1288576C800A15184 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD5C3BAE288576C800A15184 /* Inter-SemiBold.ttf */; };
+		AD5C3BB428857D1200A15184 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C3BB328857D1200A15184 /* CustomFont.swift */; };
 		ADDAF1102881ED9400EA4DB1 /* AnimatedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF10F2881ED9400EA4DB1 /* AnimatedApp.swift */; };
 		ADDAF1122881ED9400EA4DB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF1112881ED9400EA4DB1 /* ContentView.swift */; };
 		ADDAF1142881ED9500EA4DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADDAF1132881ED9500EA4DB1 /* Assets.xcassets */; };
@@ -23,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD5C3BAC288576C800A15184 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		AD5C3BAD288576C800A15184 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		AD5C3BAE288576C800A15184 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		AD5C3BB22885771B00A15184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AD5C3BB328857D1200A15184 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		ADDAF10C2881ED9400EA4DB1 /* Animated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animated.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDAF10F2881ED9400EA4DB1 /* AnimatedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedApp.swift; sourceTree = "<group>"; };
 		ADDAF1112881ED9400EA4DB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +59,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD5C3BAB288576C800A15184 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AD5C3BAC288576C800A15184 /* Inter-Regular.ttf */,
+				AD5C3BAD288576C800A15184 /* Poppins-Bold.ttf */,
+				AD5C3BAE288576C800A15184 /* Inter-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		ADDAF1032881ED9400EA4DB1 = {
 			isa = PBXGroup;
 			children = (
@@ -69,12 +88,15 @@
 		ADDAF10E2881ED9400EA4DB1 /* Animated */ = {
 			isa = PBXGroup;
 			children = (
+				AD5C3BB22885771B00A15184 /* Info.plist */,
 				ADDAF10F2881ED9400EA4DB1 /* AnimatedApp.swift */,
 				ADDAF1112881ED9400EA4DB1 /* ContentView.swift */,
+				ADDAF12F2881F08000EA4DB1 /* OnboardingView.swift */,
+				AD5C3BB328857D1200A15184 /* CustomFont.swift */,
 				ADDAF1132881ED9500EA4DB1 /* Assets.xcassets */,
+				AD5C3BAB288576C800A15184 /* Fonts */,
 				ADDAF11D2881EFF000EA4DB1 /* RiveAssets */,
 				ADDAF1152881ED9500EA4DB1 /* Preview Content */,
-				ADDAF12F2881F08000EA4DB1 /* OnboardingView.swift */,
 			);
 			path = Animated;
 			sourceTree = "<group>";
@@ -165,12 +187,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5C3BB1288576C800A15184 /* Inter-SemiBold.ttf in Resources */,
 				ADDAF1292881EFF000EA4DB1 /* shapes.riv in Resources */,
 				ADDAF1272881EFF000EA4DB1 /* check.riv in Resources */,
 				ADDAF1172881ED9500EA4DB1 /* Preview Assets.xcassets in Resources */,
 				ADDAF1282881EFF000EA4DB1 /* menu_button.riv in Resources */,
 				ADDAF1252881EFF000EA4DB1 /* house.riv in Resources */,
 				ADDAF12A2881EFF000EA4DB1 /* button.riv in Resources */,
+				AD5C3BAF288576C800A15184 /* Inter-Regular.ttf in Resources */,
+				AD5C3BB0288576C800A15184 /* Poppins-Bold.ttf in Resources */,
 				ADDAF1142881ED9500EA4DB1 /* Assets.xcassets in Resources */,
 				ADDAF1262881EFF000EA4DB1 /* confetti.riv in Resources */,
 				ADDAF12B2881EFF000EA4DB1 /* icons.riv in Resources */,
@@ -185,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADDAF1302881F08000EA4DB1 /* OnboardingView.swift in Sources */,
+				AD5C3BB428857D1200A15184 /* CustomFont.swift in Sources */,
 				ADDAF1122881ED9400EA4DB1 /* ContentView.swift in Sources */,
 				ADDAF1102881ED9400EA4DB1 /* AnimatedApp.swift in Sources */,
 			);
@@ -318,6 +344,7 @@
 				DEVELOPMENT_TEAM = XW758S68BG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Animated/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -347,6 +374,7 @@
 				DEVELOPMENT_TEAM = XW758S68BG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Animated/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
