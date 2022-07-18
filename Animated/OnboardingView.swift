@@ -18,7 +18,8 @@ struct OnboardingView: View {
                     .font(.custom("Poppins Bold", size: 60, relativeTo: .largeTitle))
                     .frame(width: 260, alignment: .leading)
                 Text("Don't skip design. Learnd design and code, by building real apps witch React and Swift. Complete courses about the best tools.")
-                    .font(.headline)
+                    .customFont(textStyle: .title)
+                    
                 
                 button.view()
                     .frame(width: 236, height: 64)
