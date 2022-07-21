@@ -31,7 +31,7 @@ struct SignInView: View {
                     .customTextField()
             }
             
-            Divider()
+            Text("OR").customFont(.subheadline2).foregroundColor(.black.opacity(0.3))
             
             Text("Sign Up with Email, Apple or Google")
                 .customFont(.subheadline)

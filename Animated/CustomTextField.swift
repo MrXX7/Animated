@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CustomTextField: ViewModifier {
+    var image: Image
+    
     func body(content: Content) -> some View {
         content.padding()
             .padding(.leading, 36)
@@ -17,7 +19,8 @@ struct CustomTextField: ViewModifier {
             .stroke()
             .fill(.black.opacity(0.1))
         )
-            .overlay(Image("Icon Email")
+            .overlay(
+                image
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 8)
             )
@@ -25,7 +28,7 @@ struct CustomTextField: ViewModifier {
 }
 
 extension View {
-    func customTextField() -> some View {
-        modifier(CustomTextField())
+    func customTextField(image: Image = Image("Icon Email")) -> some View {
+        modifier(CustomTextField(image: image))
     }
 }
