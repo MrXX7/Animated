@@ -23,3 +23,9 @@ struct CustomTextField: ViewModifier {
             )
     }
 }
+
+extension View {
+    func customTextField() -> some View {
+        modifier(CustomTextField())
+    }
+}
