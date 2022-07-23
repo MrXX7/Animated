@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD1C36CF288C759200DDD88C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C36CE288C759200DDD88C /* Extensions.swift */; };
 		AD339C3B2888875C00664F4C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD339C3A2888875C00664F4C /* CustomTextField.swift */; };
 		AD5C3BAF288576C800A15184 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD5C3BAC288576C800A15184 /* Inter-Regular.ttf */; };
 		AD5C3BB0288576C800A15184 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD5C3BAD288576C800A15184 /* Poppins-Bold.ttf */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD1C36CE288C759200DDD88C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AD339C3A2888875C00664F4C /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		AD5C3BAC288576C800A15184 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		AD5C3BAD288576C800A15184 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				ADDAF12F2881F08000EA4DB1 /* OnboardingView.swift */,
 				AD339C3A2888875C00664F4C /* CustomTextField.swift */,
 				AD5C3BB52885942700A15184 /* SignInView.swift */,
+				AD1C36CE288C759200DDD88C /* Extensions.swift */,
 				AD5C3BB328857D1200A15184 /* CustomFont.swift */,
 				ADDAF1132881ED9500EA4DB1 /* Assets.xcassets */,
 				AD5C3BAB288576C800A15184 /* Fonts */,
@@ -221,6 +224,7 @@
 				ADDAF1122881ED9400EA4DB1 /* ContentView.swift in Sources */,
 				ADDAF1102881ED9400EA4DB1 /* AnimatedApp.swift in Sources */,
 				AD5C3BB62885942700A15184 /* SignInView.swift in Sources */,
+				AD1C36CF288C759200DDD88C /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
