@@ -10,12 +10,15 @@ import SwiftUI
 struct SignInView: View {
     @State var email = ""
     @State var password = ""
+    
     var body: some View {
         VStack(spacing: 24) {
             Text("Sign In")
                 .customFont(.largeTitle)
+            
             Text("Access to 240+ hours of content. Learn design and code, by building real apps with React and Swift.")
                 .customFont(.headline)
+            
             VStack (alignment: .leading) {
                 Text("Email")
                     .customFont(.subheadline)
@@ -31,7 +34,13 @@ struct SignInView: View {
                     .customTextField()
             }
             
+            Label("Sign In", systemImage: "arrow.right")
+            
+            HStack {
+                Rectangle().frame(height: 1).opacity(0.1)
             Text("OR").customFont(.subheadline2).foregroundColor(.black.opacity(0.3))
+                Rectangle().frame(height: 1).opacity(0.1)
+            }
             
             Text("Sign Up with Email, Apple or Google")
                 .customFont(.subheadline)
