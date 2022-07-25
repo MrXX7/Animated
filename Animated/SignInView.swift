@@ -35,6 +35,13 @@ struct SignInView: View {
             }
             
             Label("Sign In", systemImage: "arrow.right")
+                .padding(20)
+                .frame(maxWidth: .infinity)
+                .background(.pink)
+                .foregroundColor(.white)
+                .cornerRadius(20, corners: [.topRight, .bottomLeft, .topRight])
+                .cornerRadius(8, corners: [.topLeft])
+            
             
             HStack {
                 Rectangle().frame(height: 1).opacity(0.1)
