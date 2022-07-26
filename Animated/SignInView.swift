@@ -35,12 +35,14 @@ struct SignInView: View {
             }
             
             Label("Sign In", systemImage: "arrow.right")
+                .customFont(.headline)
                 .padding(20)
                 .frame(maxWidth: .infinity)
-                .background(.pink)
+                .background(Color(hex: "F77D8E"))
                 .foregroundColor(.white)
                 .cornerRadius(20, corners: [.topRight, .bottomLeft, .topRight])
                 .cornerRadius(8, corners: [.topLeft])
+                .shadow(color: Color(hex: "F77D8E").opacity(0.5), radius: 20, x: 0, y: 10)
             
             
             HStack {
