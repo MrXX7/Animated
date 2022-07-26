@@ -25,7 +25,7 @@ struct OnboardingView: View {
             
             if showModal {
                 SignInView()
-                    .transition(.move(edge: .bottom))
+                    .transition(.move(edge: .top).combined(with: .opacity))
                     .overlay(
                         Button {
                             withAnimation(.spring()) {
@@ -43,6 +43,7 @@ struct OnboardingView: View {
                         }
                             .frame(maxHeight: .infinity, alignment: .bottom)
                         )
+                    .zIndex(1)
             }
         }
     }

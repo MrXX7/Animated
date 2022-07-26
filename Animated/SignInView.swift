@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import RiveRuntime
 
 struct SignInView: View {
     @State var email = ""
     @State var password = ""
+    let check = RiveViewModel(fileName: "check", stateMachineName: "State Machine 1")
     
     var body: some View {
         VStack(spacing: 24) {
@@ -76,6 +78,10 @@ struct SignInView: View {
                     .bottomTrailing))
             )
         .padding()
+        .overlay(check.view()
+            .frame(width: 100, height: 100)
+            .allowsHitTesting(false)
+                 )
     }
 }
 
