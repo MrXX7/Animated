@@ -11,7 +11,10 @@ import RiveRuntime
 struct SignInView: View {
     @State var email = ""
     @State var password = ""
+    @State var isLoading = false
+    
     let check = RiveViewModel(fileName: "check", stateMachineName: "State Machine 1")
+    let confetti = RiveViewModel(fileName: "confetti", stateMachineName: "State Machine 1")
     
     var body: some View {
         VStack(spacing: 24) {
@@ -33,18 +36,28 @@ struct SignInView: View {
                     .customFont(.subheadline)
                     .foregroundColor(.secondary)
                 SecureField("", text: $password)
-                    .customTextField()
+                    .customTextField(image: Image("Icon Lock"))
             }
             
-            Label("Sign In", systemImage: "arrow.right")
-                .customFont(.headline)
-                .padding(20)
-                .frame(maxWidth: .infinity)
-                .background(Color(hex: "F77D8E"))
-                .foregroundColor(.white)
-                .cornerRadius(20, corners: [.topRight, .bottomLeft, .topRight])
-                .cornerRadius(8, corners: [.topLeft])
+            Button {
+                isLoading = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) { try? check.triggerInput("Check", stateMachineName: "State Machine 1")
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    isLoading = false
+                    try? confetti.triggerInput("Trigger explosion", stateMachineName: "State Machine 1")
+                }
+            } label: {
+                Label("Sign In", systemImage: "arrow.right")
+                    .customFont(.headline)
+                    .padding(20)
+                    .frame(maxWidth: .infinity)
+                    .background(Color(hex: "F77D8E"))
+                    .foregroundColor(.white)
+                    .cornerRadius(20, corners: [.topRight, .bottomLeft, .topRight])
+                    .cornerRadius(8, corners: [.topLeft])
                 .shadow(color: Color(hex: "F77D8E").opacity(0.5), radius: 20, x: 0, y: 10)
+            }
             
             
             HStack {
@@ -78,10 +91,17 @@ struct SignInView: View {
                     .bottomTrailing))
             )
         .padding()
-        .overlay(check.view()
+        .overlay(
+            ZStack {
+            if isLoading {
+            check.view()
             .frame(width: 100, height: 100)
-            .allowsHitTesting(false)
-                 )
+                .allowsHitTesting(false)
+                }
+                confetti.view()
+                allowsHitTesting(false)
+            }
+        )
     }
 }
 
