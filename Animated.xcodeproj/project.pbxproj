@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AD1C36CF288C759200DDD88C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C36CE288C759200DDD88C /* Extensions.swift */; };
 		AD339C3B2888875C00664F4C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD339C3A2888875C00664F4C /* CustomTextField.swift */; };
+		AD52D6C12895115300F17B4A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD52D6C02895115300F17B4A /* TabBar.swift */; };
 		AD5C3BAF288576C800A15184 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD5C3BAC288576C800A15184 /* Inter-Regular.ttf */; };
 		AD5C3BB0288576C800A15184 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD5C3BAD288576C800A15184 /* Poppins-Bold.ttf */; };
 		AD5C3BB1288576C800A15184 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD5C3BAE288576C800A15184 /* Inter-SemiBold.ttf */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		AD1C36CE288C759200DDD88C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AD339C3A2888875C00664F4C /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		AD52D6C02895115300F17B4A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		AD5C3BAC288576C800A15184 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		AD5C3BAD288576C800A15184 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		AD5C3BAE288576C800A15184 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -65,6 +67,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD52D6BE289510E300F17B4A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADDAF12F2881F08000EA4DB1 /* OnboardingView.swift */,
+				AD5C3BB52885942700A15184 /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD52D6BF2895110000F17B4A /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				AD339C3A2888875C00664F4C /* CustomTextField.swift */,
+				AD1C36CE288C759200DDD88C /* Extensions.swift */,
+				AD5C3BB328857D1200A15184 /* CustomFont.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		AD5C3BAB288576C800A15184 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,12 +117,10 @@
 			children = (
 				AD5C3BB22885771B00A15184 /* Info.plist */,
 				ADDAF10F2881ED9400EA4DB1 /* AnimatedApp.swift */,
+				AD52D6C02895115300F17B4A /* TabBar.swift */,
 				ADDAF1112881ED9400EA4DB1 /* ContentView.swift */,
-				ADDAF12F2881F08000EA4DB1 /* OnboardingView.swift */,
-				AD339C3A2888875C00664F4C /* CustomTextField.swift */,
-				AD5C3BB52885942700A15184 /* SignInView.swift */,
-				AD1C36CE288C759200DDD88C /* Extensions.swift */,
-				AD5C3BB328857D1200A15184 /* CustomFont.swift */,
+				AD52D6BE289510E300F17B4A /* Views */,
+				AD52D6BF2895110000F17B4A /* Styles */,
 				ADDAF1132881ED9500EA4DB1 /* Assets.xcassets */,
 				AD5C3BAB288576C800A15184 /* Fonts */,
 				ADDAF11D2881EFF000EA4DB1 /* RiveAssets */,
@@ -221,6 +240,7 @@
 				ADDAF1302881F08000EA4DB1 /* OnboardingView.swift in Sources */,
 				AD5C3BB428857D1200A15184 /* CustomFont.swift in Sources */,
 				AD339C3B2888875C00664F4C /* CustomTextField.swift in Sources */,
+				AD52D6C12895115300F17B4A /* TabBar.swift in Sources */,
 				ADDAF1122881ED9400EA4DB1 /* ContentView.swift in Sources */,
 				ADDAF1102881ED9400EA4DB1 /* AnimatedApp.swift in Sources */,
 				AD5C3BB62885942700A15184 /* SignInView.swift in Sources */,
