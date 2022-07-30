@@ -6,10 +6,15 @@
 //
 
 import SwiftUI
+import RiveRuntime
 
 struct TabBar: View {
+    let icon = RiveViewModel(fileName: "icons", stateMachineName: "CHAT_Interactivity", artboardName: "CHAT")
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+           icon.view()
+        }
+        .background(Color("Background 2").opacity(0.8))
     }
 }
 

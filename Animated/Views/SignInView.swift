@@ -27,7 +27,7 @@ struct SignInView: View {
             isLoading = false
             try? confetti.triggerInput("Trigger explosion", stateMachineName: "State Machine 1")
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
                 withAnimation {
                     showModal = false
                 }
